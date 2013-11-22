@@ -148,7 +148,7 @@ $calendar = new Calendar();
 echo $calendar->show();
 ?>
     <table class=tb>
-        <tr><td class="carre" style="background-color:#ff0000"></td><td>Réservé</td></tr>
+        <tr><td class="carre" style="background-color:#ff0000"></td><td>R&eacute;serv&eacute;</td></tr>
         <tr><td class="carre" style="background-color:#DDD"></td><td>Libre</td></tr>
         <tr><td class="carre" style="background-color:#787878"></td><td>Non disponible</td></tr>
     </table>
