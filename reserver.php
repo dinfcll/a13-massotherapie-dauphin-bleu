@@ -9,7 +9,7 @@
 $date = $_GET['date'];
 $cnx = mysql_connect( "localhost", "equipe6", "equipe6abc" );
 $db= mysql_select_db( "a13equipe6" );
-$sql = "INSERT INTO `reserver`(`nom`, `telephone`, `ville`, `mail`, `date`, `état`) VALUES (\"".$_POST['Nom']."\",\"".$_POST['telephone']."\",\"".$_POST['Ville']."\",\"".$_POST['couriel']."\",\"".$date."\",\"reserver\")";
+$sql = "INSERT INTO `reserver`(`nom`, `telephone`, `ville`, `mail`, `date`, `etat`) VALUES (\"".$_POST['Nom']."\",\"".$_POST['telephone']."\",\"".$_POST['Ville']."\",\"".$_POST['couriel']."\",\"".$date."\",\"reserver\")";
 $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
 
 $data = mysql_fetch_array($req);
