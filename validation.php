@@ -3,7 +3,6 @@
 
 $_POST["couriel"];
 $_POST["nom"];
-//^[[:upper:]]
 
 
 if (filter_var($_POST["couriel"], FILTER_VALIDATE_EMAIL)) {
@@ -23,7 +22,6 @@ if (filter_var($_POST["couriel"], FILTER_VALIDATE_EMAIL)) {
             echo $headers;
         }
 
-
     }
 } else
     echo " non valide<br/>";
@@ -34,4 +32,3 @@ if (!preg_match('/^[[:upper:]][[:digit:]]{2}.{0,7}$/', $_POST["nom"])) {
 } else
     echo "Le nom d'utilisateur est correct";
 ?>
-
