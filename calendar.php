@@ -126,7 +126,7 @@ class Calendar {
         }
 //Début du code modifier
         //echo $this->currentDate;
-        $cnx = mysql_connect( "localhost", "root", "admin123" );
+        $cnx = mysql_connect( "localhost", "equipe6", "equipe6abc" );
         $db= mysql_select_db( "DauphinBleu" );
         $sql = "SELECT `date`, `etat` FROM `reserver` WHERE date=\"".$this->currentDate."\"";
         $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
