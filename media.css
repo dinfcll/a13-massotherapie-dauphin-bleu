@@ -1,0 +1,39 @@
+
+
+body{
+    background-color:   #FF358B;
+    font-size: 40px;
+}
+li {
+    display: inline-block;
+
+}
+@media only screen and (min-width: 500px) and (max-width:900px) {
+    body {
+        background-color:black;
+        color:white;
+        font-size: 10px;
+    }
+    img {
+             width:100px;
+             height:100px;
+    }
+}
+@media only screen and (max-width:500px) {
+    body {
+        background-color: #01ff00;
+        color:white;
+        font-size: 10px;
+
+    }
+
+    img {
+        display: none;
+    }
+
+    li {
+        display: block;
+
+    }
+
+}

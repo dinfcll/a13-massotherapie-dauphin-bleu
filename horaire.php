@@ -1,26 +1,8 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: administrateur
- * Date: 13-09-13
- * Time: 23:36
- * To change this template use File | Settings | File Templates.
- */
+
 include("header.html");
 
-
-/*<form method="post" action="validation.php">
-
-    <p>Pr&eacutenom et Nom:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="nom" /></p>
-    <p>Num&eacutero de t&eacutel&eacutephone: <input type="text" name="Telephone" /></p>
-    <p>Ville:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="ville" /></p>
-    <p>Adresse couriel: &nbsp;&nbsp;&nbsp;<input type="text" name="couriel" /></p>
-
-
-<p><input type="submit" name="valider" value="OK"></p>
-</form>*/?>
-
-
+?>
 
 
 
@@ -30,12 +12,9 @@ include("header.html");
     <meta charset="utf-8">
     <title>
 
-        Sign in · Twitter Bootstrap
-
     </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="description">
-    <meta content="" name="author">
+
     <!--
 
      Le styles
@@ -48,7 +27,7 @@ include("header.html");
         body {
             padding-top: 40px;
             padding-bottom: 40px;
-            background-color: #f5f5f5;
+            /*background-color: #f5f5f5;*/
         }
 
         .form-signin {
@@ -74,6 +53,9 @@ include("header.html");
             height: auto;
             margin-bottom: 15px;
             padding: 7px 9px;
+        }
+        .patate {
+            display: inline-block;
         }
 
 
@@ -104,8 +86,11 @@ include("header.html");
     <link href="../assets/ico/favicon.png" rel="shortcut icon">
 </head>
 <body>
+<?php $date = $_GET['date'] ?>
+<div class="patate">
+
 <div class="container">
-    <form class="form-signin">
+    <form class="form-signin" action="reserver.php?date=<? echo $date ?>" method="POST">
         <h2 class="form-signin-heading">
 
             Information
@@ -154,76 +139,6 @@ include("header.html");
 <script src="../assets/js/bootstrap-typeahead.js"></script>
 
 
-<!--<table>
-    <thead>
-    <tr>
-        <th>Mon</th><th>Tue</th><th>Wed</th>
-        <th>Thu</th><th>Fri</th><th>Sat</th>
-
-        <th>Sun</th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td class="padding" colspan="3"></td>
-        <td>1</td>
-
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        </tr>
-    <tr>
-        <td>5</td>
-
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>10</td>
-
-        <td>11</td>
-        </tr>
-    <tr>
-        <td>12</td>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-        <td>16</td>
-
-        <td>17</td>
-        <td>18</td>
-        </tr>
-    <tr>
-        <td>19</td>
-        <td>20</td>
-        <td>21</td>
-
-        <td>22</td>
-        <td>23</td>
-
-        <td>24</td>
-        <td>25</td>
-        </tr>
-    <tr>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-
-        <td>29</td>
-        <td>30</td>
-        <td>31</td>
-        <td></td>
-        </tr>
-    </tbody>
-    <tfoot>
-
-    <th>Mon</th><th>Tue</th><th>Wed</th>
-    <th>Thu</th><th>Fri</th><th>Sat</th>
-    <th>Sun</th>
-    </tfoot>
-    </table>-->
-
-
 
  <link href="calendar.css" type="text/css" rel="stylesheet" />
 
@@ -234,14 +149,39 @@ $calendar = new Calendar();
 
 echo $calendar->show();
 ?>
+    <table class=tb>
+        <tr><td class="carre" style="background-color:#ff0000"></td><td>Réservé</td></tr>
+        <tr><td class="carre" style="background-color:#DDD"></td><td>Libre</td></tr>
+        <tr><td class="carre" style="background-color:#787878"></td><td>Non disponible</td></tr>
+    </table>
+    <style>
+        /*div.float {*/
+            /*float: left;*/
+            /*padding:10px;*/
+        /*}*/
+        .carre {
+            width:20px;
+            height:20px;
+        }
+        .tb {
+            background-color:#ffffff;
+            margin: 10px;
+            border-style:solid;
+            border-width:1px;
+        }
+    </style>
+<!--    <div><div class="carre" style="background-color:#ff0000"></div><div>Réserver</div></div>-->
+<!--    <table>-->
+<!--        <tr><td class="carre" style="background-color:#ff0000"></td><td>Réservé</td></tr>-->
+<!--        <tr><td class="carre" style="background-color:#DDD"></td><td>Libre</td></tr>-->
+<!--        <tr><td class="carre" style="background-color:#787878"></td><td>Non disponible</td></tr>-->
+<!--    </table>-->
 
 
 
 
 
-
-
-
+</div>
 </body>
 </html>
 
