@@ -16,8 +16,8 @@
 
 </div>
 <?php
-$cnx = mysql_connect( "localhost", "root", "admin123" );
-$db= mysql_select_db( "DauphinBleu" );
+$cnx = mysql_connect( "localhost", "equipe6", "equipe6abc" );
+$db= mysql_select_db( "a13equipe6" );
 $sql = "SELECT MAX(IDcommentaire) AS IDcommentaire FROM commentaire";
 $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
 //$i = 1;

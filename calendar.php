@@ -125,17 +125,15 @@ class Calendar {
             $cellContent=null;
         }
 //Début du code modifier
-        //echo $this->currentDate;
         $cnx = mysql_connect( "localhost", "equipe6", "equipe6abc" );
         $db= mysql_select_db( "DauphinBleu" );
         $sql = "SELECT `date`, `etat` FROM `reserver` WHERE date=\"".$this->currentDate."\"";
         $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
 
-//        while($data = mysql_fetch_array($req))
+
 
 
         $data = mysql_fetch_array($req);
-        //echo $data['date'];
             if($data['date'] == $this->currentDate && $this->currentDate!="" && $data['etat'] == "reserver" )
                 return '<a href="horaire.php?date='.$this->currentDate.'"><li class="rouge" id="li-'.$this->currentDate.'" class="'.($cellNumber%7==1?' start ':($cellNumber%7==0?' end ':' ')).
                 ($cellContent==null?'mask':'').'">'.$cellContent.'</li></a>';
@@ -146,10 +144,6 @@ class Calendar {
                 else
                 return '<a href="horaire.php?date='.$this->currentDate.'"><li class="blanc" id="li-'.$this->currentDate.'" class="'.($cellNumber%7==1?' start ':($cellNumber%7==0?' end ':' ')).
                 ($cellContent==null?'mask':'').'">'.$cellContent.'</li></a>';
-
-
-
-
 
 
         mysql_free_result ($req);

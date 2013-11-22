@@ -8,8 +8,8 @@
  */
 
 
-$cnx = mysql_connect( "localhost", "root", "admin123" );
-$db= mysql_select_db( "DauphinBleu" );
+$cnx = mysql_connect( "localhost", "equipe6", "equipe6abc" );
+$db= mysql_select_db( "a13equipe6" );
 $sql = "INSERT INTO commentaire(commentaire) VALUES (\"".$_POST['commentaire']."\") ";
 $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
 

@@ -5,7 +5,6 @@ include("header.html");
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -139,7 +138,6 @@ include("header.html");
 <script src="../assets/js/bootstrap-typeahead.js"></script>
 
 
-
  <link href="calendar.css" type="text/css" rel="stylesheet" />
 
 <?php
@@ -154,11 +152,8 @@ echo $calendar->show();
         <tr><td class="carre" style="background-color:#DDD"></td><td>Libre</td></tr>
         <tr><td class="carre" style="background-color:#787878"></td><td>Non disponible</td></tr>
     </table>
+
     <style>
-        /*div.float {*/
-            /*float: left;*/
-            /*padding:10px;*/
-        /*}*/
         .carre {
             width:20px;
             height:20px;
@@ -170,16 +165,6 @@ echo $calendar->show();
             border-width:1px;
         }
     </style>
-<!--    <div><div class="carre" style="background-color:#ff0000"></div><div>Réserver</div></div>-->
-<!--    <table>-->
-<!--        <tr><td class="carre" style="background-color:#ff0000"></td><td>Réservé</td></tr>-->
-<!--        <tr><td class="carre" style="background-color:#DDD"></td><td>Libre</td></tr>-->
-<!--        <tr><td class="carre" style="background-color:#787878"></td><td>Non disponible</td></tr>-->
-<!--    </table>-->
-
-
-
-
 
 </div>
 </body>
