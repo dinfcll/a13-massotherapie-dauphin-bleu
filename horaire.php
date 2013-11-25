@@ -60,6 +60,7 @@ include("header.html");
 
 
     </style>
+    <div class="container">
     <link rel="stylesheet" href="../assets/css/bootstrap-responsive.css"/>
     <!--
 
@@ -166,6 +167,7 @@ echo $calendar->show();
         }
     </style>
 
+</div>
 </div>
 </body>
 </html>

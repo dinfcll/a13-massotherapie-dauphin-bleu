@@ -14,6 +14,7 @@
     <input type="submit" name="envoyer" value="Commenter" style="float: right;">
 
 </form>
+        <br/><br/>
 </div>
 <?php
 $cnx = mysql_connect( "localhost", "equipe6", "equipe6abc" );
