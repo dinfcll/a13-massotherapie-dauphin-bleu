@@ -12,6 +12,7 @@ include("header.html");
 ?>
 
 <div  class="container">
+    <br/><br/>
 <h3>Choix de services et tarifs &agrave; la carte:</h3><br/>
     <h4>plage horaire:</h4><br/>
 am : 9h00 - 11h30<br/>

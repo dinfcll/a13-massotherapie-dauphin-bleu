@@ -10,6 +10,6 @@ include("header.html");
 ?>
 
 <div  class="container">
-
+<br/><br/>
     Pour toutes questions, vous pouvez acheminer un courriel &agrave; massodauphinbleu@gmail.com
 </div>
