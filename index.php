@@ -15,4 +15,8 @@ include("header.html");
 
     <br/><br/>
     <h3>Quelques photos!</h3>
+
+    <img src='dos.jpg' width="500" height="100">
+    <img src='bebe.jpg' width="500" height="100">
+    <img src='pieds.jpg' width="500" height="100">
 </div>
