@@ -8,12 +8,12 @@
 
     <center>
         <textarea name="commentaire" rows="4" cols="80">&Eacute;crivez votre commentaire ici</textarea>
-    </center>
+
 <!--    <input type="text" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">-->
-    <input type="submit" name="envoyer" value="Commenter">
+    </center>
+    <input type="submit" name="envoyer" value="Commenter" style="float: right;">
 
 </form>
-
 </div>
 <?php
 $cnx = mysql_connect( "localhost", "equipe6", "equipe6abc" );

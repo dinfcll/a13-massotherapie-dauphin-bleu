@@ -10,13 +10,8 @@
 include("header.html");
 
 ?>
-<style>
-    .marge{
-        margin:100px;
-    }
 
-</style>
-<div class=marge>
+<div  class="container">
 <h3>Choix de services et tarifs &agrave; la carte:</h3><br/>
     <h4>plage horaire:</h4><br/>
 am : 9h00 - 11h30<br/>
@@ -41,5 +36,7 @@ Massage pr&eacute;natal et 2 massages enfant 90$<br/>
 Massage postnatal et 1 massage enfant 80 $<br/>
 Massage postnatal et 2 massages enfant 90 $<br/>
 Massage famille 150 $<br/>
-Massage famille (Bassin des dauphins) - 125 $<br/><br/>
+Massage famille (Bassin des dauphins) - 125 $<br/><br/><br/>
+
+Tous les services sont rendus &agrave; votre domicile.  Consultez l&rsquo;horaire, choisissez une plage horaire qui vous convient et compl&eacute;tez les informations.  Une confirmation vous sera achemin&eacute;e dans un d&eacute;lai de 24 heures.
 </div>

@@ -7,3 +7,9 @@
  * To change this template use File | Settings | File Templates.
  */
 include("header.html");
+?>
+
+<div  class="container">
+
+    Pour toutes questions, vous pouvez acheminer un courriel &agrave; massodauphinbleu@gmail.com
+</div>
