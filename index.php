@@ -18,5 +18,5 @@ include("header.html");
 
     <img src='dos.jpg' width="500" height="100">
     <img src='bebe.jpg' width="500" height="100">
-    <img src='pieds.jpg' width="500" height="100">
+    <img src='pied.jpg' width="500" height="100">
 </div>
